@@ -1,0 +1,230 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+}
+nav{
+    position:sticky;
+    height: 60px;
+    top:0;
+    left:0;
+    z-index: 1;
+    display:flex;
+    align-items: right;
+    justify-content: space-between;
+    padding:1.5rem 3.5rem;
+    background-color: rgb(83, 7, 83);
+    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+}
+nav h1{
+    color:aqua;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+nav ul{
+    list-style-type: none;
+    display:flex;
+    gap:1.9rem;
+}
+nav a{
+    color:white;
+    font-size: 30px;
+}
+nav a:hover{
+    color:black;
+}
+.pic{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:2.5rem;
+    margin:auto;
+}
+.img{
+    height: 25rem;
+    width: 25rem;
+    border-radius: 60px;
+    box-shadow: 0px 2px 5px 5px rgb(34, 208, 231);
+}
+.bio{
+    width:25rem;
+    padding: 0.625rem;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px 15px white;
+}
+.biotitle{
+    color: white;
+    margin-bottom: 0.5rem;
+}
+.bio p{
+    color: white;
+    line-height: 1.7rem;
+    padding: 0.3rem 0;
+}
+.aboutme{
+    width: 80rem;
+    margin:auto;
+    background-color: aqua;
+    box-shadow: 0px 2px 15px 15px white;
+    border-radius: 20px;
+
+}
+.aboutme h2{
+    text-align: center;
+    margin-bottom: 0.5rem;
+    padding: 0.4rem;
+}
+.aboutme p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.7rem;
+    padding: 0.4rem;
+    color:black;
+}
+#services{
+    padding: 30px 0;
+}
+.subtitle{
+    color:white;
+    font-size: 50px;
+}
+.serviceslist{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+}
+.serviceslist h2, p{
+    color:white;
+}
+.serviceslist div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s,transform 0.5s;
+}
+.serviceslist div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.serviceslist div a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.serviceslist div:hover{
+    background:aqua ;
+    transform: translateY(-10px);
+}
+#portfolio{
+    padding: 50px 0;
+}
+.worklist{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width:100%;
+    border-radius: 10px;
+    display:block;transition: transform 0.5s;
+}
+.layer{
+    width:100%;
+    height:0;
+    background: linear-gradient(rgba(0,0,0,0.6),aqua);
+    border-radius: 10px;
+    position: absolute;
+    left:0;
+    bottom:0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s; 
+}
+.layer h3{
+    color: white;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: aqua;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%
+}
+.btn{
+    display:block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid aqua;
+    padding-left: 14px 50px;
+    border-radius: 6px;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: aqua;
+}
+.contactleft{
+    flex-basis: 35%;
+}
+.contactright{
+    flex-basis: 60%;
+}
+.contactleft p i{
+    color:aqua;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.btn.btn2{
+    display:inline-block;
+    background: aqua;
+}
+.contactright form{
+    width:100%;
+}
+form input, form textarea{
+    width:100%;
+    border:0;
+    outline:none;
+    background: #2626;
+    padding: 15px;
+    margin: 15px 0;
+    color:#fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form btn2{
+    padding:14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
